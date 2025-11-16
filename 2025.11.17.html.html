@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>FPツールポータル</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-sky-100 via-white to-emerald-100">
+  <header class="w-full border-b border-slate-200 bg-white/80 backdrop-blur">
+    <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-xl font-bold text-slate-800">
+        FPツールポータル
+      </h1>
+      <span class="text-xs text-slate-500">
+        Powered by Joeワーク用
+      </span>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-8">
+    <p class="text-slate-700 mb-6 text-sm">
+      よく使う仕事用ツールをまとめたポータルです。ボタンをタップして各ツールへ。
+    </p>
+
+    <!-- ボタン4つ（スマホ1列→タブレット以上2列） -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <!-- A: レポートアプリ -->
+      <a href="report.html"
+         class="group rounded-2xl p-5 bg-white shadow-sm hover:shadow-md border border-slate-100 transition flex flex-col">
+        <div class="flex items-center gap-3 mb-2">
+          <div class="w-8 h-8 rounded-full bg-sky-500 text-white flex items-center justify-center text-sm font-bold">
+            A
+          </div>
+          <h2 class="text-lg font-semibold text-slate-800">
+            レポートアプリ
+          </h2>
+        </div>
+        <p class="text-xs text-slate-500 flex-1">
+          面談レポート作成を時短するツール（中身は既存のものをここに反映）。
+        </p>
+        <span class="mt-3 text-xs text-sky-600 group-hover:underline">
+          開く →
+        </span>
+      </a>
+
+      <!-- B: LINE返信テンプレアプリ -->
+      <a href="line-reply.html"
+         class="group rounded-2xl p-5 bg-white shadow-sm hover:shadow-md border border-slate-100 transition flex flex-col">
+        <div class="flex items-center gap-3 mb-2">
+          <div class="w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center text-sm font-bold">
+            B
+          </div>
+          <h2 class="text-lg font-semibold text-slate-800">
+            LINE返信テンプレアプリ
+          </h2>
+        </div>
+        <p class="text-xs text-slate-500 flex-1">
+          選択式で面談後のLINE文面を組み立てて、一括コピーできるツール。
+        </p>
+        <span class="mt-3 text-xs text-emerald-600 group-hover:underline">
+          開く →
+        </span>
+      </a>
+
+      <!-- C: 予備ツール -->
+      <a href="tool-c.html"
+         class="group rounded-2xl p-5 bg-white shadow-sm hover:shadow-md border border-slate-100 transition flex flex-col">
+        <div class="flex items-center gap-3 mb-2">
+          <div class="w-8 h-8 rounded-full bg-amber-400 text-white flex items-center justify-center text-sm font-bold">
+            C
+          </div>
+          <h2 class="text-lg font-semibold text-slate-800">
+            ツールC（空き枠）
+          </h2>
+        </div>
+        <p class="text-xs text-slate-500 flex-1">
+          今後追加予定のツール枠。あとから中身だけ差し替えOK。
+        </p>
+        <span class="mt-3 text-xs text-amber-500 group-hover:underline">
+          開く →
+        </span>
+      </a>
+
+      <!-- D: 予備ツール -->
+      <a href="tool-d.html"
+         class="group rounded-2xl p-5 bg-white shadow-sm hover:shadow-md border border-slate-100 transition flex flex-col">
+        <div class="flex items-center gap-3 mb-2">
+          <div class="w-8 h-8 rounded-full bg-fuchsia-400 text-white flex items-center justify-center text-sm font-bold">
+            D
+          </div>
+          <h2 class="text-lg font-semibold text-slate-800">
+            ツールD（空き枠）
+          </h2>
+        </div>
+        <p class="text-xs text-slate-500 flex-1">
+          使い道が決まったらこの枠を再利用できます。
+        </p>
+        <span class="mt-3 text-xs text-fuchsia-500 group-hover:underline">
+          開く →
+        </span>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
